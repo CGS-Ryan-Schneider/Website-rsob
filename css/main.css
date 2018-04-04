@@ -1,0 +1,62 @@
+/*
+
+Sites used for help
+https://www.wix.com/blog/2017/10/5-design-tips-for-a-professional-site/
+
+*/
+
+/* Variables */
+:root {
+	/* http://colorhunt.co/c/2763 */
+	--background-color-light: #EEEEEE;
+	--background-color-dark: #393E46;
+	--background-color-darker: #222831;
+	--main-color: #00ADB5;
+}
+
+/* Text */
+body {
+	
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+}
+h1 {
+	
+}
+
+/* Navigation Bar */
+ul.navbar {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+}
+ul.navbar li {
+	float: left;
+}
+ul.navbar li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+ul.navbar li a:hover {
+	background-color: #111;
+}
+ul.navbar li a.active {
+	background-color: #0cf;
+	color: #000;
+}
+ul.navbar li a.active:hover {
+	background-color: #0cf;
+	color: #000;
+}
+
