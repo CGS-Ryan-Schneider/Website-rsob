@@ -12,12 +12,12 @@ https://www.wix.com/blog/2017/10/5-design-tips-for-a-professional-site/
 	--background-color-dark: #393E46;
 	--background-color-darker: #222831;
 	--main-color: #00ADB5;
-	--tick-color: #00b509;
+	--complete-color: #00b509;
 
 	--header-width: 100px;
 
 	--box-margin: 10px;
-	--box-height: 200px;
+	--box-height: 150px;
 	--box-width: 200px;
 
 	--header-width: 51px;
@@ -87,6 +87,18 @@ div.lesson-box {
 	background-color: white;
 	border-radius: 5px; /* Rounds corners */
 }
+div.lesson-box.available {
+	border-bottom: 50px solid var(--main-color);
+}
+div.lesson-box.unavailable {
+	border-bottom: 50px solid #ccc;
+	background-color: #ccc;
+	color: #555;
+}
+div.lesson-box.complete {
+	border-bottom: 50px solid var(--complete-color);
+}
+
 div.lesson-box div.box-num {
 	font-size: 80%;
 	text-align: right;
