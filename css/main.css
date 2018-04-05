@@ -14,13 +14,13 @@ https://www.wix.com/blog/2017/10/5-design-tips-for-a-professional-site/
 	--main-color: #00ADB5;
 	--tick-color: #00b509;
 
-	--header-width: 51px;
+	--header-width: 100px;
 
 	--box-margin: 10px;
 	--box-height: 200px;
 	--box-width: 200px;
 
-	--header-width: 55px;
+	--header-width: 51px;
 }
 
 /* General */
@@ -93,7 +93,7 @@ div.lesson-box div.box-num {
 	margin-right: 5px;
 }
 div.lesson-box div.box-title {
-	font-size: 130%;
+	font-size: 120%;
 	margin-left: 10px;
 	margin-right: 20px;
 }
