@@ -14,22 +14,25 @@ https://www.wix.com/blog/2017/10/5-design-tips-for-a-professional-site/
 	--main-color: #00ADB5;
 	--complete-color: #00b509;
 
-	--header-width: 100px;
-
 	--box-margin: 10px;
 	--box-height: 150px;
 	--box-width: 200px;
 
-	--header-width: 51px;
+	--nav-height: 51px;
 }
 
 /* General */
 body {
 	font-family: helvetica;
 	background-color: var(--background-color-light);
+	margin: 0px;
 }
-header {
-	height: var(--header-width);
+nav {
+	height: var(--nav-height);
+}
+article {
+	margin-left: 8px;
+	margin-right: 8px;
 }
 h1,
 h2,
@@ -51,9 +54,6 @@ ul.navbar {
 	padding: 0;
 	overflow: hidden;
 	background-color: var(--background-color-dark);
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: var(--header-width);
 }
@@ -86,6 +86,8 @@ div.lesson-box {
 	float: left; /* Makes boxes inline */
 	background-color: white;
 	border-radius: 5px; /* Rounds corners */
+	text-decoration: none;
+	color: black;
 }
 div.lesson-box.available {
 	border-bottom: 50px solid var(--main-color);
@@ -109,3 +111,4 @@ div.lesson-box div.box-title {
 	margin-left: 10px;
 	margin-right: 20px;
 }
+	
