@@ -25,6 +25,7 @@ https://www.wix.com/blog/2017/10/5-design-tips-for-a-professional-site/
 body {
 	font-family: helvetica;
 	background-color: var(--background-color-light);
+	color: black;
 	margin: 0px;
 }
 nav {
@@ -40,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-	
+
 }
 h1 {
 	
