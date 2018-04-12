@@ -28,6 +28,9 @@ body {
 	color: black;
 	margin: 0px;
 }
+header {
+	margin: 8px;
+}
 nav {
 	height: var(--nav-height);
 }
@@ -45,6 +48,9 @@ h6 {
 }
 h1 {
 	
+}
+h1.index-title {
+	margin-left: 12px;
 }
 
 /* Navigation Bar */
@@ -85,10 +91,10 @@ div.lesson-box {
 	margin-top: var(--box-margin);
 	margin-bottom: var(--box-margin);
 	float: left; /* Makes boxes inline */
-	background-color: white;
+	background-color: var(--background-color-dark);
 	border-radius: 5px; /* Rounds corners */
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 div.lesson-box.available {
 	border-bottom: 50px solid var(--main-color);
