@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html>
-	<head>	
+	<head lang="en">	
 		<title>HTML Tutorial</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 	
 	<body>
 		<header>
-			<nav>
-				<ul class="navbar">
-					<li><a href="index.html" class="active">Home</a></li>
-					<li><a href="html/about.html">About</a></li> <!-- Make absolute links instead of relative when finishing up in edstem -->
-				</ul>
-			</nav>
+			<h1 class="index-title">RSOB</h1>
 		</header>
-		
-		<article>
-			<h1>Start making websites in minutes!</h1>
-
-			<div class="lesson-box" id="tutorial-www">
-				<div class="box-num">
-					1
+			
+	<a href="lessons/example.html" class="lesson"> <!-- Replace example.html with your lesson file -->
+			<div class="lesson-box available" id="tutorial-example"> <!--  Replace tutorial-example with a more representative id -->
+				<div class="br-icon"></div>
+				<div class="box-num">0</div>
+				<div class="box-title">
+					Lesson on how to develop lessons
 				</div>
+			</div>
+		</a>
+
+		<a href="lessons/www.html">
+			<div class="lesson-box available" id="tutorial-www">
+				<div class="br-icon"></div>
+				<div class="box-num">1</div>
 				<div class="box-title">
 					Introduction to the World Wide Web
 				</div>
 			</div>
-			
-			<div class="lesson-box" id="tutorial-html">
-				<div class="box-num">
-					2
-				</div>
+		</a>
+
+		<a href="lessons/html.html">
+			<div class="lesson-box available" id="tutorial-html">
+				<div class="br-icon"></div>
+				<div class="box-num">2</div>
 				<div class="box-title">
 					Introduction to HTML
 				</div>
 			</div>
-			
-			<div class="lesson-box" id="tutorial-first">
-				<div class="box-num">
-					3
-				</div>
+		</a>
+
+		<a href="lessons/first.html">
+			<div class="lesson-box available" id="tutorial-first">
+				<div class="br-icon"></div>
+				<div class="box-num">3</div>
 				<div class="box-title">
 					Creating your first web page
 				</div>
 			</div>
-			
-			<div class="lesson-box" id="tutorial-blog">
-				<div class="box-num">
-					4
-				</div>
+		</a>
+
+		<a href="lessons/blog.html">
+			<div class="lesson-box available" id="tutorial-blog">
+				<div class="br-icon"></div>
+				<div class="box-num">4</div>
 				<div class="box-title">
 					Making a blog
 				</div>
 			</div>
-			
-			<div class="lesson-box" id="tutorial-validation">
-				<div class="box-num">
-					5
-				</div>
+		</a>
+		
+		<a href="lessons/validation.html">
+			<div class="lesson-box available" id="tutorial-validation">
+				<div class="br-icon"></div>
+				<div class="box-num">5</div>
 				<div class="box-title">
 					Validation
 				</div>
 			</div>
-
+		</a>
 
 		</article>
 	</body>
