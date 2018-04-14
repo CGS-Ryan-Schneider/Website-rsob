@@ -12,13 +12,18 @@ https://www.wix.com/blog/2017/10/5-design-tips-for-a-professional-site/
 	--background-color-dark: #393E46;
 	--background-color-darker: #222831;
 	--main-color: #00ADB5;
+	--check-color: #00b509;
 
-	--header-width: 55px;
+	--header-width: 51px;
+
+	--box-margin: 10px;
+	--box-height: 200px;
+	--box-width: 200px;
 }
 
 /* General */
 body {
-	font-family: "Segoe UI";
+	font-family: helvetica;
 	background-color: var(--background-color-light);
 }
 header {
@@ -66,4 +71,27 @@ ul.navbar li a:hover:not(.active) {
 }
 ul.navbar li a.active {
 	background-color: var(--main-color);
+}
+
+/* Lessons */
+div.lesson-box {
+	width: var(--box-width);
+	height: var(--box-height);
+	margin-left: var(--box-margin);
+	margin-right: var(--box-margin);
+	margin-top: var(--box-margin);
+	margin-bottom: var(--box-margin);
+	float: left; /* Makes boxes inline */
+	background-color: white;
+	border-radius: 5px; /* Rounds corners */
+}
+div.lesson-box div.box-num {
+	font-size: 80%;
+	text-align: right;
+	margin-right: 5px;
+}
+div.lesson-box div.box-title {
+	font-size: 130%;
+	margin-left: 10px;
+	margin-right: 20px;
 }
