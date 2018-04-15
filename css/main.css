@@ -35,14 +35,25 @@ body {
 	margin: 0px;
 }
 header {
-	color: var(--background-color-darker);
-	padding-left: 10px;
-	padding-right: 10px;
+
 }
 nav {
 	height: var(--nav-height);
+	margin-bottom: 2%;
+}
+section {
+	width: 630px; /* increase size to move article further to the left */
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
 }
 article {
+	width: 630px;
+
 	margin-left: 8px;
 	margin-right: 8px;
 	border: 2px solid var(--main-color);
@@ -58,12 +69,13 @@ h3,
 h4,
 h5,
 h6 {
-
+	color: var(--background-color-darker);
+	margin-left: 10px;
 }
 h1 {
-	margin-top: 3%;
+	
 }
-h1.index-title {
+h1#index-title {
 }
 
 /* Navigation Bar */
