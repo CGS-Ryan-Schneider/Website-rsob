@@ -13,12 +13,18 @@ https://www.wix.com/blog/2017/10/5-design-tips-for-a-professional-site/
 	--background-color-darker: #222831;
 	--main-color: #00ADB5;
 	--complete-color: #00b509;
+	--in-color: #FFFF00;
 
 	--box-margin: 10px;
 	--box-height: 150px;
 	--box-width: 200px;
 
-	--nav-height: 51px;
+	--nav-height: 25px;
+}
+
+/* Test */
+p.test::after {
+	content: " - CSS is working"
 }
 
 /* General */
@@ -29,12 +35,20 @@ body {
 	margin: 0px;
 }
 header {
-	margin: 8px;
+	color: var(--background-color-darker);
+	padding-left: 10px;
+	padding-right: 10px;
 }
 nav {
 	height: var(--nav-height);
 }
 article {
+	margin-left: 8px;
+	margin-right: 8px;
+	border: 2px solid var(--main-color);
+	background-color: white;
+}
+article p {
 	margin-left: 8px;
 	margin-right: 8px;
 }
@@ -47,10 +61,9 @@ h6 {
 
 }
 h1 {
-	
+	margin-top: 35px;
 }
 h1.index-title {
-	margin-left: 12px;
 }
 
 /* Navigation Bar */
@@ -62,17 +75,22 @@ ul.navbar {
 	overflow: hidden;
 	background-color: var(--background-color-dark);
 	width: 100%;
-	height: var(--header-width);
 }
 ul.navbar li {
 	float: left;
+	border-left: 1px solid var(--background-color-light);
+	height: 48px;
+	width: 75px;
+}
+ul.navbar li:first-child{
+	border: none;
 }
 ul.navbar li a {
 	display: block;
 	color: white;
 	text-align: center;
+	line-height: 48px;
 	font-size: 20px;
-	padding: 14px 16px;
 	text-decoration: none;
 }
 ul.navbar li a:hover:not(.active) {
@@ -80,6 +98,9 @@ ul.navbar li a:hover:not(.active) {
 }
 ul.navbar li a.active {
 	background-color: var(--main-color);
+}
+ul.navbar li a.inactive {
+	
 }
 
 /* Lessons */
@@ -91,10 +112,10 @@ div.lesson-box {
 	margin-top: var(--box-margin);
 	margin-bottom: var(--box-margin);
 	float: left; /* Makes boxes inline */
-	background-color: var(--background-color-dark);
-	border-radius: 5px; /* Rounds corners */
+	background-color: white;
 	text-decoration: none;
-	color: white;
+	border-radius: 5px; /* Rounds corners */
+	color: black;
 }
 div.lesson-box.available {
 	border-bottom: 50px solid var(--main-color);
@@ -118,4 +139,74 @@ div.lesson-box div.box-title {
 	margin-left: 10px;
 	margin-right: 20px;
 }
+
+ul.nav-bar2 {
+	display: block;
+	overflow: hidden;
+	list-style-type: none;
+	margin-top: 50px;
+	width: 210px;
+	float: left;
+}
+ul.nav-bar2 li {
 	
+}
+ul.nav-bar2 li a {
+	text-decoration: none;
+}
+ul.nav-bar2 li a:hover {
+	background-color: var(--background-color-darker);
+}
+div.lesson-rect {
+	width: 200px; /* Makes boxes inline */
+	height: 60px;
+	background-color: white;
+	border-radius: 5px; /* Rounds corners */
+	color: black;
+	text-decoration: none;
+}
+div.lesson-rect.available {
+	border-right: 10px solid var(--main-color);
+}
+div.lesson-rect.unavailable {
+	border-right: 10px solid #ccc;
+	background-color: #ccc;
+	color: #555;
+}
+div.lesson-rect.complete {
+	border-right: 10px solid var(--complete-color);
+}
+div.lesson-rect.in {
+	border-right: 10px solid var(--in-color);
+}
+div.lesson-rect div.rect-num {
+	font-size: 80%;
+	text-align: left;
+	margin-left: 5px;
+}
+div.lesson-rect div.rect-title {
+	font-size: 120%;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+p.nextlesson {
+	list-style-type: none;
+	margin: none;
+	margin-left: 8px;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--background-color-dark);
+	float: left;
+	border-left: 1px solid var(--background-color-light);
+	height: 48px;
+	width: 150px;
+	background-color: var(--main-color);
+}
+p.nextlesson a {
+	display: block;
+	color: white;
+	text-align: center;
+	line-height: 48px;
+	font-size: 20px;
+	text-decoration: none;
+}
