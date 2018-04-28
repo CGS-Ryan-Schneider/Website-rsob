@@ -12,6 +12,7 @@ https://www.wix.com/blog/2017/10/5-design-tips-for-a-professional-site/
 	--background-color-dark: #393E46;
 	--background-color-darker: #222831;
 	--main-color: #00ADB5;
+
 	--complete-color: #00b509;
 	--in-color: #FFFF00;
 
@@ -41,8 +42,27 @@ header {
 }
 nav {
 	height: var(--nav-height);
+	margin-bottom: 2%;
+}
+section {
+	width: 630px; /* increase size to move article further to the left */
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
 }
 article {
+	width: 630px;
+
+	margin-left: 8px;
+	margin-right: 8px;
+	border: 2px solid var(--main-color);
+	background-color: white;
+}
+article p {
 	margin-left: 8px;
 	margin-right: 8px;
 	border: 2px solid var(--main-color);
@@ -58,12 +78,14 @@ h3,
 h4,
 h5,
 h6 {
-
+	color: var(--background-color-darker);
+	margin-left: 10px;
 }
 h1 {
 	margin-top: 35px;
 }
 h1.index-title {
+
 }
 
 /* Navigation Bar */
